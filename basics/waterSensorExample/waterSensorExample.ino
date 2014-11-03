@@ -4,8 +4,10 @@ void setup() {
 }
 
 void loop() {
-  Serial.print("Moisture Sensor Value: ");
-  Serial.println(analogRead(0));
-  delay(1000);
+  Serial.print("{\"watervalue\":");
+  Serial.print(analogRead(0));
+  Serial.print("}");
+  Serial.println("");
+  delay(5000);
 
 }
