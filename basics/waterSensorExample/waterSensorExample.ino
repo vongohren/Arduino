@@ -8,6 +8,6 @@ void loop() {
   Serial.print(analogRead(0));
   Serial.print("}");
   Serial.println("");
-  delay(5000);
+  delay(300000);
 
 }
